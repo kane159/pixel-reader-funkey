@@ -1,8 +1,8 @@
 #ifndef SCREEN_H_
 #define SCREEN_H_
 
-#define SCREEN_WIDTH 640
-#define SCREEN_HEIGHT 480
+#define SCREEN_WIDTH 240
+#define SCREEN_HEIGHT 240
 
 struct SDL_PixelFormat;
 SDL_PixelFormat *get_render_surface_format();

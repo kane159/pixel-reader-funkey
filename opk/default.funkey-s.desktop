@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Book
+Comment=Book reader
+Icon=icon
+Exec=reader.dge
+Categories=media
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+
+mkdir cross-compile/funkey
+git clone https://github.com/nih-at/libzip.git
+mkdir libzip/build && cd libzip/build && cmake -DCMAKE_INSTALL_PREFIX=../../cross-compile/funkey .. && make && make install && cd ../../
+make -f Makefile.funkey clean && make
+cp ./build/reader ./opk
+mksquashfs opk/ Book-funkey-s.opk -all-root -no-xattrs -noappend -no-exports
