@@ -1,0 +1,14 @@
+prefix=/opt/FunKey-sdk/funkey/new/pixel-reader-funkey/cross-compile/funkey
+exec_prefix=${prefix}
+bindir=${prefix}/bin
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+zipcmp=${bindir}/zipcmp
+
+Name: libzip
+Description: library for handling zip archives
+Version: 1.10.0
+Libs:  -L${libdir} -lzip
+Libs.private:  -lzstdbz2 -lzstdZLIB::ZLIB
+Cflags: -I${includedir}
